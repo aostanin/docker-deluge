@@ -1,8 +1,5 @@
 FROM ubuntu:trusty
 
-ENV LANG en_US.UTF-8
-RUN locale-gen $LANG
-
 RUN apt-get install -qy software-properties-common && \
     add-apt-repository ppa:deluge-team/ppa && \
     apt-get update -q && \
